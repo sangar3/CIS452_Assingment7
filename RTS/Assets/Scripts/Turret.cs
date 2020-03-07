@@ -17,7 +17,7 @@ public class Turret : MonoBehaviour
     public Transform partToRotate;
     public GameObject bulletprefab;
     public Transform firepoint;
-
+    public AudioClip playershootingsfx;
 
 
 
@@ -82,6 +82,7 @@ public class Turret : MonoBehaviour
     void Shoot()
     {
         Debug.Log("Shoot");
+        AudioManager.Instance.PlaySFX(playershootingsfx, 3.0f);
         GameObject bulletGO = (GameObject)Instantiate(bulletprefab, firepoint.position, firepoint.rotation);
         
         Bullet bullet = bulletGO.GetComponent<Bullet>();

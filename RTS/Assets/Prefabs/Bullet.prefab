@@ -94,6 +94,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 70
+  banktext: {fileID: 8849562423197671180, guid: 2870dbe7dbf55bf42879562bab81b1e8,
+    type: 3}
   impactEffect: {fileID: 5288597617371013388, guid: 7e7ab89879c355e4abcbe541302fb817,
     type: 3}
 --- !u!65 &6495019541469306840

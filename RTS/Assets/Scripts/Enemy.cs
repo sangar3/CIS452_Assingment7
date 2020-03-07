@@ -23,6 +23,7 @@ public class Enemy : MonoBehaviour
         if(Vector3.Distance(transform.position, target.position) <= 0.4f)
         {
             GetNextWayPoint();
+            speed+= 5f;
         }
 
     }
@@ -31,11 +32,17 @@ public class Enemy : MonoBehaviour
     {
         if(wavepointIndex>= Waypoints.points.Length-1) //reaches end
         {
-            Destroy(gameObject);
-            
+
+            EndPath();
             return;
         }
         wavepointIndex++;
         target = Waypoints.points[wavepointIndex];
+    }
+
+    void EndPath()
+    {
+        CommandInvoker.lives--;
+        Destroy(gameObject);
     }
 }

@@ -1,4 +1,9 @@
-﻿
+﻿/*
+		 * (Santiago Garcia II)
+		 * (CubePlacer.cs)
+		 * (Assignment 7)
+		 * (creates the turret creation commands and setting the recevier )
+	*/
 
 using System.Collections;
 using System.Collections.Generic;

@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+		 * (Santiago Garcia II)
+		 * (PlaceCubeCommand.cs)
+		 * (Assignment 7)
+		 * (Has a binding for a action and a receiver )
+	*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

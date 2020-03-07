@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 public class Bullet : MonoBehaviour
 {
     private Transform target;
@@ -43,8 +43,9 @@ public class Bullet : MonoBehaviour
         Destroy(target.gameObject);
         Destroy(gameObject);
         CommandInvoker.playerbank += 10; //adding money 
+
         Debug.Log("Playerbank is: " + CommandInvoker.playerbank);
-       
+        
 
 
     }

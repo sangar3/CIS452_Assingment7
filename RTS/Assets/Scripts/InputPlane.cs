@@ -1,8 +1,14 @@
-﻿using System.Collections;
+﻿/*
+		 * (Santiago Garcia II)
+		 * (InputPlane.cs)
+		 * (Assignment 7)
+		 * (preforms the work needed to carry out request by checking to see if player touches node )
+	*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InputPlane : MonoBehaviour //reciver class 
+public class InputPlane : MonoBehaviour  
 {
   
 

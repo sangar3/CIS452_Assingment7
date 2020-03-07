@@ -562,6 +562,7 @@ MonoBehaviour:
   bulletprefab: {fileID: 8705868408956202131, guid: aa07699acc7675344a2a245a493baf1b,
     type: 3}
   firepoint: {fileID: 2050208469663203537}
+  playershootingsfx: {fileID: 8300000, guid: d375be5d2d7808840a4eb03045efdb9b, type: 3}
 --- !u!1001 &6535696043896548485
 PrefabInstance:
   m_ObjectHideFlags: 0
