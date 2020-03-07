@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlaceCubeCommand : ICommand
+public class PlaceCubeCommand : ICommand //concreete class
 {
+
     Vector3 position;
     Color color;
     Transform cube;
 
     public PlaceCubeCommand(Vector3 position, Color color, Transform cube)
     {
-        this.position = position;
+        this.position = position ;
         this.color = color;
         this.cube = cube;
 
@@ -19,5 +20,9 @@ public class PlaceCubeCommand : ICommand
     public void Execute()
     {
         CubePlacer.PlaceCube(position, color, cube);
+    }
+    public void Undo()
+    {
+        CubePlacer.RemoveCube(position, color);
     }
 }
